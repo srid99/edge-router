@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: stub
+
+server:
+  port: 0
+
+security:
+  basic:
+    enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+      leaseRenewalIntervalInSeconds: 60

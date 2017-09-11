@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: edge-router
+
+security:
+  basic:
+    enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  ignoredServices: '*'
+  ignoredPatterns: /loggers, /health
+  routes:
+    api: /*
+
+ribbon:
+  eureka:
+    enabled: true
+  IsSecured: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+      circuitBreaker:
+        forceClosed: true
+        errorThresholdPercentage: 1

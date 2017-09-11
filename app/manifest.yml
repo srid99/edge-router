@@ -1,0 +1,6 @@
+applications:
+   - path: target/app.jar
+     memory: 768M
+     instances: 1
+     name: edge-router
+     disk_quota: 512M

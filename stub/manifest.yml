@@ -1,0 +1,6 @@
+applications:
+   - path: target/stub.jar
+     memory: 768M
+     instances: 1
+   - name: stub
+     disk_quota: 512M

@@ -1,0 +1,6 @@
+applications:
+   - path: target/eureka.jar
+     memory: 768M
+     instances: 1
+   - name: eureka
+     disk_quota: 512M
